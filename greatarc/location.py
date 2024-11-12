@@ -9,7 +9,7 @@ class Location:
     def get_coordinates(self):
         return f"Latitude: {self.latitude}, Longitude: {self.longitude}"
 
-    def calculate_distance(self, other_location):
+    def calculate_distance(self, other_location, unit = "km"):
         import math
         # Haversine formula to calculate distance between two points on the Earth
         
